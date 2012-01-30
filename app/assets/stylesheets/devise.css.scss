@@ -1,0 +1,70 @@
+#loginBoxShadow {
+	margin: auto;
+	width: 460px;
+	padding: 20px;
+}
+
+.loginBox {
+	border: 1px solid #ABC3D7;
+	padding: 20px;
+	margin: auto;
+}
+
+.loginTitle {
+	padding-left: 50px;
+	font-size: 11px;
+}
+
+.loginTitle em {
+	font-size: 20px;
+}
+
+.loginPrompt {
+	padding-top: 15px;
+	padding-left: 60px;
+	padding-bottom: 10px;
+	font-size: 11px;
+}
+
+.loginBox ul li {
+	clear: both;
+	padding-top: 3px;
+}
+
+.loginBox input {
+	margin-left: 20px;
+}
+
+.loginBox input.submit {
+	background-color: #ECF1F4;
+	background-image: url("/assets/button.gif");
+	border-color: #ABC3D7;
+	color: #000000;
+	background-position: center top;
+	background-repeat: repeat-x;
+	font-weight: normal;
+	padding-bottom: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.loginBox .inputBox {
+	float: left;
+	font-size: 12px;
+}
+
+.loginBox .inputBox label {
+	float: left;
+	padding-left: 20px;
+	width: 80px;
+}
+
+.loginBox .inputBox input {
+	float: left;
+	width: 150px;
+	background-color: #FFFFFF;
+	border-color: #94C1E8;
+}

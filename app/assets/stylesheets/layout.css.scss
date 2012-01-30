@@ -1,0 +1,135 @@
+body {
+	background-color: #FFFFFF;
+	color: #444444;
+	font-size: 12px;
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	margin: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+input {
+	border: 1px solid;
+}
+
+#header {
+	min-width: 85em;
+}
+
+#companyLogo {
+	float: left;
+	margin-bottom: -8px;
+	padding: 10px 10px 0 15px;
+	vertical-align: bottom;
+	background: url("/assets/xpg_logo.jpg") no-repeat;
+	height: 82px;
+	width: 280px;
+}
+
+#globalLinks {
+	font-size: 12px;
+	float: right;
+	padding: 8px 2px 3px;
+	vertical-align: middle;
+}
+
+#globalLinks ul {
+	color: #CCCCCC;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+#globalLinks ul li {
+	display: block;
+	float: left;
+	margin: 0 0.15em;
+}
+
+#welcome {
+	font-size: 12px;
+	border-right: 2px solid #DDDDDD;
+	font-weight: normal;
+	padding: 8px 10px 3px;
+	vertical-align: middle;
+	float: right;
+}
+
+div.clear {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+#header div.line {
+	background-color: #4E8CCF;
+	border-bottom-color: #0046AD;
+	color: #0046AD;
+	height: 2px;
+	margin: 0;
+	padding: 0;
+}
+
+div#content {
+	border: 0 none;
+	margin-left: 0;
+	margin-right: 5px;
+	padding-bottom: 20px;
+	padding-left: 8px;
+	padding-top: 11px;
+}
+
+#content.noLeftColumn {
+	border-left: medium none;
+	margin-left: 5px;
+}
+
+#moduleList {
+	background-image: url("/assets/menu_bg.gif");
+	background-repeat: repeat-x;
+	background-bottom-color: #0046AD;
+	display: block;
+	height: 2.4em;
+}
+
+#moduleList ul {
+	color: #CCCCCC;
+	list-style: none outside none;
+	margin: 0;
+}
+
+#moduleList > ul:first-child {
+	padding-left: 14px;
+}
+
+#moduleList ul li {
+	font-size: 12px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin: 0 0.15em;
+	padding: 10px 8px 4px 4px;
+}
+
+#moduleList > ul > li {
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+#moduleList span {
+	color: #444444;
+}
+
+#leftMenu {
+	float: left;
+	width: 200px;
+	height: 600px;
+	border-right: 1px solid;
+}
+
+#mainContent {
+	float: right;
+}

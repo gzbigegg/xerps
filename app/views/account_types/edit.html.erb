@@ -1,0 +1,9 @@
+<p><%= flash[:error] %></p>
+<%= form_for @account_type do |f| %>
+	<%= f.text_field :name %>
+	<%= f.text_field :code %>
+	<%= f.text_field :close_method %>
+	<%= f.text_field :report_type %>
+	<%= f.text_area :note %>
+	<%= f.submit "Submit" %>
+<% end %>
