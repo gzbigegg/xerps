@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "account_types/show" do
+describe "accounting/account_types/show" do
   before do
     assign(:account_type, Factory(:assets))
   end

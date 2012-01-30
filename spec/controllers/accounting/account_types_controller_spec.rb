@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe AccountTypesController do
+describe Accounting::AccountTypesController do
   login_admin
   
   let(:valid_attributes) {
@@ -47,7 +47,7 @@ describe AccountTypesController do
       
       it "should redirect to the account type list page" do
         post :create, :account_type => valid_attributes
-        response.should redirect_to(account_types_path)
+        response.should redirect_to(accounting_account_types_path)
       end
     end
     
@@ -98,7 +98,7 @@ describe AccountTypesController do
       
       it "should redirect to the show account type page" do
         put :update, :id => "1", :account_type => valid_attributes
-        response.should redirect_to(account_type_path(account_type))
+        response.should redirect_to(accounting_account_type_path(account_type))
       end
     end
     

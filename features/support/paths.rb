@@ -13,15 +13,15 @@ module NavigationHelpers
     when /^the dashboard page$/
       root_path
     when /^the add account type page$/
-      new_account_type_path
+      new_accounting_account_type_path
     when /^the account type list page$/
-      account_types_path
+      accounting_account_types_path
     when /^the show account type of "([^"]*)" page$/
       account_type = AccountType.find_by_code($1)
-      account_type_path(account_type)
+      accounting_account_type_path(account_type)
     when /^the edit account type of "([^"]*)" page$/
       account_type = AccountType.find_by_code($1)
-      edit_account_type_path(account_type)
+      edit_accounting_account_type_path(account_type)
     end
   end
 end

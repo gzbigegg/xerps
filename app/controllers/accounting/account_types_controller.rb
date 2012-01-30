@@ -1,11 +1,13 @@
-class AccountTypesController < AuthorizedController
+class Accounting::AccountTypesController < AuthorizedController
+  load_and_authorize_resource
+  
   def new
   end
   
   def create
     if @account_type.save
       flash[:notice] = "Account type was created successfully"
-      redirect_to account_types_path
+      redirect_to accounting_account_types_path
     else
       flash[:error] = "Failed to create account type"
       render :new
@@ -18,7 +20,7 @@ class AccountTypesController < AuthorizedController
   def update
     if @account_type.update_attributes(params[:account_type])
       flash[:notice] = "Account type was updated successfully"
-      redirect_to account_type_path(@account_type)
+      redirect_to accounting_account_type_path(@account_type)
     else
       flash[:error] = "Failed to update account type"
       render :edit
